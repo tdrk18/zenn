@@ -16,7 +16,7 @@ jobs:
       - run: npm install
       - name: execute textlint for articles
         run: |
-          npx textlint -f checkstyle "articles/*.md" -o textlint_articles.log
+          npx textlint -f checkstyle "articles/*.md" -o textlint_articles.log || true
       - name: run reviewdog
         if: always()
         env:
