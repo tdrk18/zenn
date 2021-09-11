@@ -11,7 +11,7 @@ UITextField に AlignmentRight 属性を指定した場合、テキストの末�
 データ上はスペースが入力されているので、続けてなにか文字を入力すると、スペースと一緒に表示される。
 
 
-![ng_version.gif](https://qiita-image-store.s3.amazonaws.com/0/77522/92b74055-3d4b-391d-210b-93766c0d5a55.gif)
+![ng_version.gif](https://storage.googleapis.com/zenn-user-upload/00b399bf77d6e9dca156ae83.gif)
 
 
 stackoverflow の質問もあって、どうやら iOS 7 からの現象ぽい
@@ -46,7 +46,7 @@ func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange
 }
 ```
 
-![ok_version.gif](https://qiita-image-store.s3.amazonaws.com/0/77522/48453292-bf9e-6290-03ae-6f42f19b0932.gif)
+![ok_version.gif](https://storage.googleapis.com/zenn-user-upload/cfabacb91a81f6397c9cfef6.gif)
 
 
 これでよさそう
