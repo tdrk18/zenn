@@ -4,9 +4,17 @@
     "preset-ja-spacing": {
       "ja-space-between-half-and-full-width": {
         "space": "always"
-      },
+      }
     },
-    "preset-ja-technical-writing": true,
+    "preset-ja-technical-writing": {
+      "no-exclamation-question-mark": {
+        "allowFullWidthQuestion": true
+      },
+      "no-doubled-joshi": {
+        "strict": false,
+        "allow": ["が"]
+     }
+    },
     "spellcheck-tech-word": true
   }
 }
