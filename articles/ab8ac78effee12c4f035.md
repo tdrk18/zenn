@@ -14,13 +14,13 @@ UITextField に AlignmentRight 属性を指定した場合、テキストの末�
 ![ng_version.gif](https://storage.googleapis.com/zenn-user-upload/00b399bf77d6e9dca156ae83.gif)
 
 
-stackoverflow の質問もあって、どうやら iOS 7 からの現象ぽい
+stackoverflow の質問もあって、どうやら iOS 7 からの現象のよう。
 https://stackoverflow.com/questions/19569688/right-aligned-uitextfield-spacebar-does-not-advance-cursor-in-ios-7
 
 ## どうしたか
 
-UITextField を編集したときに呼ばれる  `textField(_:shouldChangeCharactersIn:replacementString:)` に修正を加える
-もしスペースが入力されたら、 [non-breaking space](https://en.wikipedia.org/wiki/Non-breaking_space) に置き換えて表示してやる
+UITextField のテキストを編集したときに呼ばれる `textField(_:shouldChangeCharactersIn:replacementString:)` を修正する。
+もしスペースが入力されたら、 [non-breaking space](https://en.wikipedia.org/wiki/Non-breaking_space) に置き換えて表示する。
 
 ```swift
 func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -50,7 +50,7 @@ func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange
 
 
 これでよさそう
-サンプルコードはこちらhttps://gist.github.com/tdrk18/bdbaabd4ba898dcbdb0d8e5c62fbabad
+サンプルコードはこちら https://gist.github.com/tdrk18/bdbaabd4ba898dcbdb0d8e5c62fbabad
 
 ## 🐢
 `NSTextAlignment.left` とかにすればいいんですけど、 いろいろと制約があって `NSTextAlignment.right` のままで回避したい場合に。
