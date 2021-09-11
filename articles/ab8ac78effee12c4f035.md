@@ -2,7 +2,7 @@
 title: "NSTextAlignment.rightなUITextFieldのスペースが表示されない"
 emoji: "📝"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["iOS", "Swift", "Objective-C"]
+topics: ["ios", "swift", "objectivec"]
 published: false
 ---
 
@@ -22,7 +22,7 @@ https://stackoverflow.com/questions/19569688/right-aligned-uitextfield-spacebar-
 UITextField を編集したときに呼ばれる  `textField(_:shouldChangeCharactersIn:replacementString:)` に修正を加える
 もしスペースが入力されたら、 [non-breaking space](https://en.wikipedia.org/wiki/Non-breaking_space) に置き換えて表示してやる
 
-```ViewController.swift
+```swift
 func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let text = textField.text!
         
@@ -35,7 +35,7 @@ func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange
     }
 ```
 
-```ViewController.m
+```objc
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     if (range.location == textField.text.length && [string isEqualToString:@" "]) {
         textField.text = [textField.text stringByAppendingString:@"\u00a0"];
@@ -54,3 +54,7 @@ func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange
 
 ## 🐢
 `NSTextAlignment.left` とかにすればいいんですけど、 いろいろと制約があって `NSTextAlignment.right` のままで回避したい場合に。
+
+---
+
+Copy from https://qiita.com/tdrk/items/f0a373899facf3fc2ed1
