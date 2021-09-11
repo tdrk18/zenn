@@ -3,7 +3,7 @@ title: "NSTextAlignment.rightなUITextFieldのスペースが表示されない"
 emoji: "📝"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["ios", "swift", "objectivec"]
-published: false
+published: true
 ---
 
 ## 何が起きたか
