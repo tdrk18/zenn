@@ -11,10 +11,14 @@
         "allowFullWidthExclamation": true,
         "allowFullWidthQuestion": true
       },
+      "no-doubled-conjunction": {
+        "strict": false,
+        "allow": ["が"]
+      },
       "no-doubled-joshi": {
         "strict": false,
         "allow": ["が"]
-     }
+      }
     },
     "spellcheck-tech-word": true
   }
