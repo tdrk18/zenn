@@ -24,7 +24,7 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-      - run: npm install
+      - run: npm ci
       - name: execute textlint for articles
         run: |
           npx textlint -f checkstyle "articles/*.md" -o textlint_articles.log || true
