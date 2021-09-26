@@ -3,7 +3,7 @@ title: "特定の port を使っている process を調べる"
 emoji: "🏁"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["unix"]
-published: false
+published: true
 ---
 
 # 特定の port を使っている process を調べる
