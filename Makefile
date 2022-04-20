@@ -1,11 +1,11 @@
 bootstrap:
-	npm install
+	@npm install
 
 preview:
-	npx zenn preview
+	@npx zenn preview
 
 lint:
-	npx textlint -f checkstyle "articles/*.md" -o textlint_articles.log
+	@npx textlint -f checkstyle "articles/*.md" -o textlint_articles.log
 
 new_article:
-	npx zenn new:article
+	@npx zenn new:article
