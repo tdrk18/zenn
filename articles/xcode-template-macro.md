@@ -3,7 +3,7 @@ title: "Xcodeのファイルヘッダーをカスタマイズする"
 emoji: "🖊️"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["xcode"]
-published: false
+published: true
 ---
 
 # Xcodeで新規作成するファイルのヘッダーの内容をカスタマイズする
