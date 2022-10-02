@@ -3,7 +3,7 @@ title: "Bitrise で brew upgrade できないとき"
 emoji: "🍺"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["bitrise", "homebrew"]
-published: false
+published: true
 ---
 
 # Bitrise で `brew upgrade <formula>` をしたい
