@@ -1,0 +1,11 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    target-branch: "main"
+    versioning-strategy: "lockfile-only"
+    schedule:
+      interval: "daily"
+      timezone: "Asia/Tokyo"
+    reviewers:
+      - tdrk18
