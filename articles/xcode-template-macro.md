@@ -62,3 +62,7 @@ Xcode がファイルを認識してくれる箇所はいくつかあるので�
     - `<WorkspaceName>.xcworkspace/xcshareddata/IDETemplateMacros.plist`
 - Xcode user data
     - `$HOME/Library/Developer/Xcode/UserData/IDETemplateMacros.plist`
+
+## Reference
+
+- https://help.apple.com/xcode/mac/9.0/index.html?localePath=en.lproj#/dev91a7a31fc
