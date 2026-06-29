@@ -3,7 +3,7 @@ title: "Danger の実行を少し早くする tips"
 emoji: "⚡"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["danger", "ruby", "ci"]
-published: false
+published: true
 ---
 
 ## 概要
