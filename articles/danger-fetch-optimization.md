@@ -68,6 +68,15 @@ Bitrise では `BITRISEIO_GIT_BRANCH_DEST` / `BITRISE_GIT_BRANCH` に base/head 
           bundle exec danger
 ```
 
+## GitHub Actions 向け action を公開しました
+
+この tips を GitHub Actions で手軽に利用できるよう、[danger-ruby-action](https://github.com/marketplace/actions/danger-ruby-action) として Marketplace に公開しました。Ruby のセットアップから事前 fetch・Danger の実行までをまとめて行います。
+
+```yaml
+- uses: actions/checkout@v7
+- uses: tdrk18/danger-action@v1
+```
+
 ## まとめ
 
 シンプルな 1 行の追加ですが、Git fetch に時間がかかるリポジトリでは CI の実行時間を大幅に短縮できます。実際に適用して Danger の実行時間が約 6 分から約 1 分に短縮された例もあります。
