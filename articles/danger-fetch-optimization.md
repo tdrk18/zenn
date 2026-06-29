@@ -31,7 +31,7 @@ def ensure_commitish_exists_on_branch!(branch, commitish)
 end
 ```
 
-git fetch に時間がかかるリポジトリの場合、この内部 fetch がボトルネックになります。
+Git fetch に時間がかかるリポジトリの場合、この内部 fetch がボトルネックになります。
 
 ## 解決策
 
@@ -70,4 +70,4 @@ Bitrise では `BITRISEIO_GIT_BRANCH_DEST` / `BITRISE_GIT_BRANCH` に base/head 
 
 ## まとめ
 
-シンプルな1行の追加ですが、git fetch に時間がかかるリポジトリでは CI の実行時間を大幅に短縮できます。実際に適用して Danger の実行時間が約 6 分から約 1 分に短縮された例もあります。
+シンプルな 1 行の追加ですが、Git fetch に時間がかかるリポジトリでは CI の実行時間を大幅に短縮できます。実際に適用して Danger の実行時間が約 6 分から約 1 分に短縮された例もあります。
